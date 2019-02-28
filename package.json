@@ -1,0 +1,18 @@
+{
+  "name": "@yuiblog/edge-ssr",
+  "version": "0.1.0",
+  "description": "Server-Side Rendering on CDN Edge Location",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --watch ./src --ext .ts --exec 'tsc && fly server $(pwd)/lib'"
+  },
+  "repository": "git@github.com:YuiBlog/edge-ssr.git",
+  "author": "Mikazuki Fuyuno <mikazuki_fuyuno@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@fly/fly": "^0.45.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3333"
+  }
+}
